@@ -16,6 +16,7 @@ const products = [
     { id: 28, name: 'Star Wars Jedi: Survivor', category: 'AVENTURA', price: 70, image: './imagensProdutos/Star-Wars-Jedi-Survivor.svg' },
     { id: 29, name: 'The Witcher 3: Wild Hunt', category: 'RPG', price: 50, image: './imagensProdutos/The-Witcher-3-Wild-Hunt.svg' },
     { id: 30, name: 'Watch Dogs', category: 'ACAO', price: 40, image: './imagensProdutos/Watch-Dogs.svg' },
+    { id: 31, name: 'Equipamento', category: 'EQUIPAMENTO', price: 100, image: './imagensProdutos/EQUIPAMENTO.svg' },
 ];
 
 
