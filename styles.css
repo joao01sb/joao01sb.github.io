@@ -1,0 +1,218 @@
+/* Reset de estilos padrão */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #8b8b8b;
+    color: #fff;
+    padding: 0px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra no header */
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Fundo branco para a parte superior */
+    padding: 5px 200px; /* Logo e Barra de Pesquisa */
+}
+
+.header_main {
+    display: flex;
+    justify-content: space-between; /* Ajusta o espaço entre os itens */
+    align-items: center;
+    padding: 1px 0; /* Padding ajustado */
+}
+
+/* Estilos para o logo */
+.header_logo img {
+    max-width: 200px; /* Aumenta um pouco o tamanho do logo */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaços extras */
+    padding: 5px 0px;
+}
+
+/* Estilos para a barra de pesquisa */
+.header_search input {
+    padding: 1px; /* Aumenta o espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda cinza */
+    transition: width 0.3s ease; /* Adiciona transição suave ao expandir */
+    margin-top: auto;
+    width: 200px; /* Largura inicial */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+.header_search input:focus {
+    width: 300px; /* Largura expandida ao foco */
+}
+
+/* Estilos para a lista de categorias */
+.header_categories ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 1px 200px;
+}
+
+.header_categories li {
+    float: left;
+    margin-right: 40px; /* Aumenta o espaçamento entre os itens */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    transition: color 0.3s ease; /* Transição suave na mudança de cor */
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header_categories li:hover {
+    color: #000; /* Cor preta ao passar o mouse */
+    background: #bebebe;
+}
+
+/* Estilos para o badge do carrinho */
+.cart-badge {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    position: absolute;
+    top: -10px; /* Ajuste para posicionar corretamente */
+    right: +25px; /* Ajuste para posicionar corretamente */
+    display: none; /* Inicialmente escondido */
+}
+
+/* Estilos para o carrinho */
+.header_cart {
+    padding: 8px;
+    border-radius: 20px;
+    position: relative; /* Necessário para o posicionamento do badge */
+}
+
+.header_cart img {
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Estilos para o container do slider */
+.container_slider {
+    max-width: 100%;
+    height: 375px; /* Altura reduzida para 320px */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa a altura do container */
+}
+
+/* Estilos para a imagem do banner */
+.container_slider img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+    height: 100%; /* Garante que a imagem ocupe toda a altura do container */
+    object-fit: cover; /* Redimensiona a imagem mantendo a proporção e cobrindo o container */
+}
+
+/* Estilos para o título principal */
+header h1 {
+    margin: 0;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    display: flex;
+}
+
+/* Estilos para a barra lateral */
+#sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* Estilos para a barra lateral de pesquisa */
+#search {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+/* Estilos para a lista de categorias na barra lateral */
+#categories {
+    list-style-type: none;
+    padding: 0;
+}
+
+#categories li {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+}
+
+#categories li:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
+
+#categories li.active {
+    background-color: #ddd;
+}
+
+/* Estilos para a lista de produtos */
+#product-list {
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Centraliza os itens */
+}
+
+/* Estilos para os cards de produtos */
+.product {
+    width: calc(25.0% - 20px); /* Reduz o tamanho do card */
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1); /* Sombra no card */
+    transition: transform 0.3s ease; /* Transição suave na transformação */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 220px; /* Reduz a altura da imagem */
+    object-fit: cover;
+    border-radius: 5px; /* Borda arredondada para a imagem */
+}
+
+/* Estilos para o botão "Adicionar ao Carrinho" */
+.product button {
+    background: #e7e7e7;
+}
+
+/* Estilos para o footer */
+.main_footer {
+    background-color: #8b8b8b; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra no footer */
+}
+
+/*carrinho stylos*/

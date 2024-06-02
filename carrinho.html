@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="stylesCarrinho.css">
+</head>
+<body>
+<header>
+    <h1>Carrinho de Compras</h1>
+    <a href="index.html">Voltar para o Catálogo</a>
+</header>
+<main>
+    <div id="cart-items">
+        <div class="cart-item">
+            <img src="produto1.jpg" alt="Produto 1">
+            <div class="cart-item-details">
+                <h3>Nome do Produto 1</h3>
+                <p>Descrição do Produto 1</p>
+                <p>Quantidade: 1</p>
+            </div>
+            <div class="cart-item-price">R$ 50,00</div>
+        </div>
+        <!-- Outros itens do carrinho -->
+    </div>
+    <div id="cart-actions">
+        <button id="clear-cart">Limpar Carrinho</button>
+        <button id="checkout">Realizar Pagamento $</button>
+        <select id="payment-method">
+            <option value="credito">Crédito</option>
+            <option value="debito">Débito</option>
+            <option value="pix">PIX</option>
+        </select>
+<!--        <input type="text" id="discount-code" placeholder="Adicionar cupom de desconto">-->
+        <p id="total-price">Preço Total: R$0,00</p> <!-- Preço total será atualizado pelo JavaScript -->
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

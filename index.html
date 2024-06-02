@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JogoTop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script>
+        window.onload = function(){
+            slide1();
+        };
+        function slide1() {
+            document.getElementById('img').src = 'img/slide/slide1.svg';
+            setTimeout('slide3()', 3000);
+        }
+        function slide2() {
+            document.getElementById('img').src = 'img/slide/slide2.svg';
+            setTimeout('slide1()', 3000);
+        }
+        function slide3() {
+            document.getElementById('img').src = 'img/slide/slide3.svg';
+            setTimeout('slide2()', 3000);
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="header_top">
+        <div class="header_logo">
+            <img src='logo.png' alt="Logo da sua empresa">
+        </div>
+        <div class="header_search">
+            <input type="search" class="s" id="search"name="search" placeholder="Pesquisar:">
+        </div>
+    </div>
+    <div class="header_main">
+        <nav class="header_categories">
+            <ul>
+                <li data-category="TODAS">Todos</li>
+                <li data-category="ACAO">Ação</li>
+                <li data-category="AVENTURA">Aventura</li>
+                <li data-category="ESPORTES">Esportes</li>
+                <li data-category="MOBA">MOBA</li>
+                <li data-category="EQUIPAMENTO">Equipamento</li>
+            </ul>
+        </nav>
+        <div class="header_cart" id="cart">
+            <a href="carrinho.html">
+                <img src="cart-icon.png" alt="Carrinho de compras">
+                <span class="cart-badge" id="cart-count"></span>
+            </a>
+        </div>
+    </div>
+</header>
+<div class="container_slider">
+    <img id="img" src="" alt="Banner Slider">
+</div>
+<main>
+    <div id="product-list"></div>
+</main>
+<footer class="main_footer">
+    &copy; 2024 Todos Os Direitos Reservados
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
