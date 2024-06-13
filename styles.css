@@ -7,7 +7,7 @@ body {
 
 /* Estilos para o header */
 header {
-    background-color: #8b8b8b;
+    background-color: #8f8afffc;
     color: #fff;
     padding: 0px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra no header */
@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white; /* Fundo branco para a parte superior */
+    background-color: #dcfff0; /* Fundo branco para a parte superior */
     padding: 5px 200px; /* Logo e Barra de Pesquisa */
 }
 
@@ -177,7 +177,7 @@ main {
 .product {
     width: calc(25.0% - 20px); /* Reduz o tamanho do card */
     margin: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #6ff2b9c4;
     padding: 5px;
     text-align: center;
     box-sizing: border-box;
@@ -200,8 +200,11 @@ main {
 
 /* Estilos para o botão "Adicionar ao Carrinho" */
 .product button {
-    background: #e7e7e7;
-}
+    background: #caffda99;
+    border: 2.3px solid #a8ddf3;
+    border-radius: 5px;
+    padding: 4px;
+}  
 
 /* Estilos para o footer */
 .main_footer {

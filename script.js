@@ -1,22 +1,22 @@
 // Variáveis globais
 const products = [
-    { id: 15, name: 'Assassin\'s Creed Valhalla', category: 'ACAO', price: 60, image: './imagensProdutos/Assassin_s_Creed_Valhalla.svg' },
-    { id: 16, name: 'Assassin\'s Creed Valhalla (Xbox)', category: 'ACAO', price: 60, image: './imagensProdutos/Assassins-Creed-Valhalla_xbox.svg' },
+    { id: 15, name: 'Assassin\'s Creed Valhalla', category: 'Ação', price: 60, image: './imagensProdutos/Assassin_s_Creed_Valhalla.svg' },
+    { id: 16, name: 'Assassin\'s Creed Valhalla (Xbox)', category: 'Ação', price: 60, image: './imagensProdutos/Assassins-Creed-Valhalla_xbox.svg' },
     { id: 17, name: 'Death Stranding', category: 'AVENTURA', price: 50, image: './imagensProdutos/death_stranding.svg' },
     { id: 18, name: 'Disney Illusion Island', category: 'AVENTURA', price: 40, image: './imagensProdutos/Disney-Illusion-Island.svg' },
-    { id: 19, name: 'EA Sports FC 24', category: 'ESPORTES', price: 70, image: './imagensProdutos/EA-Sports-FC-24.svg' },
+    { id: 19, name: 'EA Sports FC 24', category: 'Esportes', price: 70, image: './imagensProdutos/EA-Sports-FC-24.svg' },
     { id: 20, name: 'Final Fantasy Type-0 HD', category: 'RPG', price: 35, image: './imagensProdutos/Final-Fantasy-Type-0-Hd.svg' },
     { id: 21, name: 'Final Fantasy XII: The Zodiac Age', category: 'RPG', price: 40, image: './imagensProdutos/Final-Fantasy-Xii-The-Zodiac-Age.svg' },
-    { id: 22, name: 'God of War Ragnarök', category: 'ACAO', price: 70, image: './imagensProdutos/God-of-War-Ragnar.svg' },
+    { id: 22, name: 'God of War Ragnarök', category: 'Ação', price: 70, image: './imagensProdutos/God-of-War-Ragnar.svg' },
     { id: 23, name: 'Doki Doki Literature Club Plus', category: 'MOBA', price: 20, image: './imagensProdutos/Jogo-Doki-Doki-Literature-Club-Plus.svg' },
     { id: 24, name: 'Lego Os Incríveis', category: 'AVENTURA', price: 30, image: './imagensProdutos/Jogo-Lego-Os-Incr-veis.svg' },
     { id: 25, name: 'Mortal Kombat 11', category: 'LUTA', price: 45, image: './imagensProdutos/Mortal-Kombat-11.svg' },
-    { id: 26, name: 'Red Dead Redemption II', category: 'ACAO', price: 65, image: './imagensProdutos/Red-Dead-Redemption-II.svg' },
-    { id: 27, name: 'Spider-Man', category: 'ACAO', price: 60, image: './imagensProdutos/spider-man.svg' },
+    { id: 26, name: 'Red Dead Redemption II', category: 'Ação', price: 65, image: './imagensProdutos/Red-Dead-Redemption-II.svg' },
+    { id: 27, name: 'Spider-Man', category: 'Ação', price: 60, image: './imagensProdutos/spider-man.svg' },
     { id: 28, name: 'Star Wars Jedi: Survivor', category: 'AVENTURA', price: 70, image: './imagensProdutos/Star-Wars-Jedi-Survivor.svg' },
     { id: 29, name: 'The Witcher 3: Wild Hunt', category: 'RPG', price: 50, image: './imagensProdutos/The-Witcher-3-Wild-Hunt.svg' },
-    { id: 30, name: 'Watch Dogs', category: 'ACAO', price: 40, image: './imagensProdutos/Watch-Dogs.svg' },
-    { id: 31, name: 'Equipamento', category: 'EQUIPAMENTO', price: 100, image: './imagensProdutos/EQUIPAMENTO.svg' },
+    { id: 30, name: 'Watch Dogs', category: 'Ação', price: 40, image: './imagensProdutos/Watch-Dogs.svg' },
+    { id: 31, name: 'Oculos VR 3', category: 'Realidade Virtual', price: 2300, image: './imagensProdutos/EQUIPAMENTO.svg' },
 ];
 
 
@@ -67,7 +67,7 @@ function displayProducts(productsArray) {
             <h3>${product.name}</h3>
             <img src="${product.image}" alt="${product.name}">
             <p>Categoria: ${product.category}</p>
-            <p>Preço: $${product.price}</p>
+            <p>Preço: R$ ${product.price},00</p>
             <button onclick="addToCart(${product.id})">Adicionar ao Carrinho</button>
         `;
         productList.appendChild(productItem);
